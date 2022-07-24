@@ -12,6 +12,8 @@ public class Solution {
 	}
 }
 
+// Time complexity O(n) && Space complexity O(n)
+
 public class Solution {
 	public int[] twoSum(int[] nums, int target) {
 
@@ -32,7 +34,7 @@ public class Solution {
 	}
 }
 
-
+// Time complexity O(n) && Space Complexity O(n)
 
 public class Solution {
 	public int[] twoSum(int[] nums, int target) {
