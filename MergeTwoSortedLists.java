@@ -56,3 +56,5 @@ class Solution {
 	}
 }
 
+// Time Complexity = O(a + b) based on the different sizes of nodes.
+
