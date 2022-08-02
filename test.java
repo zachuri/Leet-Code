@@ -1,17 +1,27 @@
 class Solution {
-	public int maxProfit(int[] prices) {
-		if (prices == null || prices.length <= 1) {
-			return 0;
+    public boolean isPalindrome(String s) {
+		String fixed_string = "";
+
+		for (char c : s.toCharArray()) {
+			if (Character.isDigit(c) || Character.isLetter(c)) {
+				fixed_string += c; 
+			}
 		}
 
-		int result = 0;
-		int min = prices[0];
+		fixed_string = fixed_string.toLowerCase();
 
-		for (int i = 0; i < prices.length; ++i) {
-			result = Math.max(result, prices[i] - min);
-			min = Math.min(min, prices[i]);
+		int a_pointer = 0;
+		int b_pointer = fixed_string.length() - 1;
+
+		while (a_pointer <= b_pointer) {
+			if (fixed_string.charAt(a_pointer) != fixed_string.charAt(b_pointer)) {
+				return false;
+			}
+			a_pointer += 1;
+			b_pointer -= 1;
 		}
-		
-		return result;
+
+		return true;
 	}
 }
+
