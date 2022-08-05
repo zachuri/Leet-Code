@@ -1,34 +1,32 @@
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode() {}
- *     TreeNode(int val) { this.val = val; }
- *     TreeNode(int val, TreeNode left, TreeNode right) {
- *         this.val = val;
- *         this.left = left;
- *         this.right = right;
- *     }
- * }
- */
 class Solution {
-    public TreeNode invertTree(TreeNode root) {
+    public boolean isPalindrome(String s) {
 
-		if (root == null) {
-			return root;
+		if (s.isEmpty()) {
+			return true;
 		}
 
-		invertTree(root.left);
-		invertTree(root.right);
+		String temp = "";
 
-		TreeNode temp = root.left;
-		root.left = root.right;
-		root.right = temp;
+		for (char c : s.toCharArray()) {
+			if (Character.isLetter(c) || Character.isDigit(c)) {
+				temp += c;
+			}
+		}
 
-		return root;
+		temp = temp.toLowerCase();
+		int a = 0;
+		int b = temp.length() - 1;
+
+		while (a < b) {
+			if (temp.charAt(a) != temp.charAt(b)) {
+				return false;
+			}
+
+			a += 1; 
+			b -= 1; 
+		}
+		
+		return true;
     }
 }
-
 
