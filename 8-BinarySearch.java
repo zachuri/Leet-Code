@@ -24,4 +24,4 @@ class Solution {
     }
 }
 
-// Time Complexity: O(logn) Space: O(n)
+// time complexity: o(logn) space: o(n)
