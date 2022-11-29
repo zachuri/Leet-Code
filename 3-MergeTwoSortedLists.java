@@ -10,7 +10,12 @@
  */
 class Solution {
   public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
+    // 1. check if its null
+    // 2. head 
+    // 3. loop through each list and see each l val is smaller 
+    // 4. loop through the rest of each node if there is any 
     // Check if ant of the lists are null
+
     if (l1 == null) {
       return l2;
     }
