@@ -1,5 +1,9 @@
 class Solution {
   public int maxProfit(int[] prices) {
+    // 1. check if null
+    // 2. keep track of min
+    // 3. keep track of result
+
 	  if (prices == null || prices.length <= 1) {
 		  return 0;
 	  }
