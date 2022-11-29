@@ -15,6 +15,10 @@
  */
 class Solution {
     public TreeNode invertTree(TreeNode root) {
+    //1. check if root is null
+    //2. Recursive call invertTree() for left and right 
+    //3. make the switch
+
 		// base case
 		if (root == null) {
 			return root;
