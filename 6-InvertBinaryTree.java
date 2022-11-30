@@ -14,25 +14,25 @@
  * }
  */
 class Solution {
-    public TreeNode invertTree(TreeNode root) {
+  public TreeNode invertTree(TreeNode root) {
     //1. check if root is null
     //2. Recursive call invertTree() for left and right 
     //3. make the switch
 
-		// base case
-		if (root == null) {
-			return root;
-		}        
-
-		invertTree(root.left);
-		invertTree(root.right);
-
-		TreeNode t = root.left;
-		root.left = root.right;
-		root.right = t;
-
-		return root;
+    // Base case if root is null
+    if (root == null) {
+      return root;
     }
-}
 
-// Time Complexity -> O(2^n) Space Complexity O(n)
+    // Recrusive call
+    invertTree(root.left);
+    invertTree(root.right);
+
+    // Switch
+    TreeNode temp = root.left;
+    root.left = root.right;
+    root.right = temp;
+
+    return root;
+  }
+}
