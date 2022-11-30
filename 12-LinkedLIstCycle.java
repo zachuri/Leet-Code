@@ -18,7 +18,7 @@ public class Solution {
     Set<ListNode> nodesSeen = new HashSet<>();
     while (head != null) {
         if (nodesSeen.contains(head)) {
-            return true;
+            return true
         } else {
             nodesSeen.add(head);
         }
