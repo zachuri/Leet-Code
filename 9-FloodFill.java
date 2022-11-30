@@ -32,6 +32,8 @@ class Solution {
 
     //Change current row/col to updated color
     image[r][c] = color;
+
+    // recursive call
     dfs(image, r-1, c, currColor, color);
     dfs(image, r, c-1, currColor, color);
     dfs(image, r+1, c, currColor, color);
