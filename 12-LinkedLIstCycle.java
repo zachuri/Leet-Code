@@ -10,6 +10,8 @@
  * }
  */
 
+// https://medium.com/@nisargdevdhar/leetcode-solution-72406f05b78a
+
 // Brute Force
 public class Solution {
   public boolean hasCycle(ListNode head) {
