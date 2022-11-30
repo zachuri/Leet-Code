@@ -1,4 +1,10 @@
 class Solution {
+  // 1. Create  a Stack of leftSymobls,
+  // 2. for loop through each character
+  // - check if its a left symbol and push it
+  // - then continously check the the rest of the symobls
+  // - if the current is right symbol/ leftsymbols is not empty/ and peek the leftSymbols 
+
 	public boolean isValid(String s) {
 		Stack<Character> leftSymbols = new Stack<>();
 
