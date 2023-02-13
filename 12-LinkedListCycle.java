@@ -10,6 +10,9 @@
  * }
  */
 
+
+//https://blog.devgenius.io/leetcode-141-linked-list-cycle-solution-with-images-85da536
+
 // Brute Force
 public class Solution {
 	public boolean hasCycle(ListNode head) {
@@ -32,21 +35,18 @@ public class Solution {
 //Two-pointer method
 public class Solution {
 	public boolean hasCycle(ListNode head) {
-    if (head == nul) {
-      return false;
-    }
-
     ListNode slow = head;
-    ListNode fast = head.next;
+    ListNode fast = head;
 
-    while (slow != fast) {
-      if (fast == null || fast.next == null) {
-        return false;
-      }
-      slow = slow.next;
+    while (fast != null && fast.next != null) {
       fast = fast.next.next;
+      slow = slow.next;
+
+      if (fast == slow) {
+        return true;
+      }
     }
 
-    return true;
+    return false;
 	}
 }
