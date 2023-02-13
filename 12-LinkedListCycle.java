@@ -10,6 +10,7 @@
  * }
  */
 
+// Brute Force
 public class Solution {
 	public boolean hasCycle(ListNode head) {
 		Set<ListNode> nodeSeen = new HashSet<>();
@@ -25,5 +26,27 @@ public class Solution {
       head = head.next;
     }
     return false;
+	}
+}
+
+//Two-pointer method
+public class Solution {
+	public boolean hasCycle(ListNode head) {
+    if (head == nul) {
+      return false;
+    }
+
+    ListNode slow = head;
+    ListNode fast = head.next;
+
+    while (slow != fast) {
+      if (fast == null || fast.next == null) {
+        return false;
+      }
+      slow = slow.next;
+      fast = fast.next.next;
+    }
+
+    return true;
 	}
 }
