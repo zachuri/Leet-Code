@@ -19,6 +19,8 @@
 // than 1 then return -1 else return the height of the subtree.
 // Time & Space: O(n)
 
+// https://www.youtube.com/watch?v=QfJsau0ItOY
+
 class Solution {
   public boolean isBalanced(TreeNode root) {
     return maxDepth(root) != -1;
