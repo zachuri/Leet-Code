@@ -7,7 +7,7 @@ class Solution {
     }
 
     for (char c : ransomNote.toCharArray()) {
-      if (count[c]-- == 0) {
+      if (count[c]-- <= 0) {
         return false;
       }
     }

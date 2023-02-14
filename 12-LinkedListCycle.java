@@ -11,7 +11,7 @@
  */
 
 
-//https://blog.devgenius.io/leetcode-141-linked-list-cycle-solution-with-images-85da536
+//https://blog.devgenius.io/leetcode-141-linked-list-cycle-solution-with-images-85da5369a0da
 
 // Brute Force
 public class Solution {
