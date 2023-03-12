@@ -1,3 +1,5 @@
+// Goal is to find in the array to add each character in the array
+
 class Solution {
     public int longestPalindrome(String s) {
         int[] count = new int[128];
