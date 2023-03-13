@@ -2,6 +2,22 @@
 // Other solutions
 //  https://aaronice.gitbook.io/lintcode/array/majority-element
 
+//https://www.youtube.com/watch?v=gY-I8uQrCkk
+
+class Solution {
+  public int majorityElement(int[] nums) {
+    int candidate = 0;
+    int count = 0;
+
+    for (int element : nums) {
+      if (count ==0 ) candidate = element;
+      if (element == candidate) ++count;
+      else --count;
+    }
+    return candidate;
+  }
+}
+
 
 // Boyer-Moore Voting Algorithm
 class Solution {
