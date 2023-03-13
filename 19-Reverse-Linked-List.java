@@ -1,3 +1,6 @@
+//Visualization: https://www.geeksforgeeks.org/reverse-a-linked-list/
+// Solution: https://github.com/varunu28/LeetCode-Java-Solutions/blob/master/Easy/Reverse%20Linked%20List.java
+
 /**
  * Definition for singly-linked list.
  * public class ListNode {
