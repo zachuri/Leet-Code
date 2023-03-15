@@ -1,3 +1,6 @@
+// https://github.com/david2999999/Leet-Code-Youtube/blob/master/Java/Google/542%20-%2001%20Matrix/ZeroOneMatrix.txt 
+// https://www.youtube.com/watch?v=zcRq2T992IE
+
 class Solution {
   // MAX Possible distance
   private static final int MAX_DISTANCE = 10000;      
